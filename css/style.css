@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  background-color: #f7f7f6;
+  font-family: 'Manrope', sans-serif;
+  color: #1b1e26;
+  font-size: 16px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #1b1e26 transparent;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  height: 30px;
+  justify-self: start;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  background-color: #1b1e26;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #ec6944;
+}
+
+.contacto-boton {
+  background-color: #45b8b4;
+  color: #f7f7f6;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-self: end;
+  font-size: 2rem;
+}
+
+.contacto-boton a {
+  text-decoration: none;
+  color: #f7f7f6;
+}
+
+.contacto-boton:hover {
+  background-color: #2b8a87;
+}
+
+main .inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+main h1 {
+  font-family: 'manrope', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+main h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #1b1e26;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+main .h2resaltado {
+  color: #ec6944;
+  font-weight: 700;
+  font-style: italic;
+}
+
+main .flechaabajo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .sobremi {
+  width: 50%;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+main .sobremi-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b1e26;
+  border-radius: 50px;
+  padding: 2rem;
+  color: #f7f7f6;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+main .sobremi-texto h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ec6944;
+  font-style: normal;
+}
+
+main .portfolio {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+}
+
+main .portfolio h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ec6944;
+  font-style: normal;
+}
+
+main .portfolio p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #1b1e26;
+}
+
+main .portfolio .proyectos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+main .portfolio .proyectos .proyecto1,
+.proyecto2,
+.proyecto3 {
+  background-color: #1b1e26;
+  color: #f7f7f6;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+main .portfolio .proyectos .proyecto1:hover,
+.proyecto2:hover,
+.proyecto3:hover {
+  transform: scale(1.05);
+}
+
+main .portfolio .proyectos h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ec6944;
+}
+
+main .portfolio .proyectos button {
+  background-color: #45b8b4;
+  color: #f7f7f6;
+  border: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main .portfolio .proyectos button a {
+  text-decoration: none;
+  color: #f7f7f6;
+}
+
+main .portfolio .proyectos button:hover {
+  background-color: #2b8a87;
+}
+
+main .portfolio .proyectos p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #f7f7f6;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+main .portfolio .proyectos img {
+  width: 50vh;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+main .servicios {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+}
+
+main .servicios h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ec6944;
+  font-style: normal;
+}
+
+main .servicios p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #1b1e26;
+}
+
+main .servicios .servicios-lista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+main .servicios .servicios-lista p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #f7f7f6;
+  margin-top: 0.5rem;
+}
+
+main .servicios .servicios-lista h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ec6944;
+  margin-bottom: 0.5rem;
+}
+
+main .servicios .servicios-lista .servicio {
+  background-color: #1b1e26;
+  color: #f7f7f6;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+main .servicios .servicios-lista .servicio:hover {
+  transform: scale(1.05);
+}
+
+main .servicios .servicios-lista img {
+  width: 50vh;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+main .contacto h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ec6944;
+  font-style: normal;
+}
+
+main .contacto p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #1b1e26;
+}
+
+main .contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+main .contacto form label {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #1b1e26;
+}
+
+main .contacto form input,
+main .contacto form textarea {
+  width: 80%;
+  max-width: 600px;
+  padding: 1rem;
+  border: none;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  border: 2px solid #45b8b4;
+  border-radius: 20px;
+}
+
+main .contacto form input:focus,
+main .contacto form textarea:focus {
+  outline: none;
+  border-color: #ec6944;
+}
+
+main .contacto form input,
+main .contacto form textarea {
+  background-color: #f7f7f6;
+  color: #1b1e26;
+}
+
+main .contacto form textarea {
+  height: 150px;
+  resize: none;
+}
+
+main .contacto form button {
+  background-color: #45b8b4;
+  color: #f7f7f6;
+  font-family: 'Manrope', sans-serif;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main .contacto form button:hover {
+  background-color: #2b8a87;
+}
+
+.footer {
+  background-color: #1b1e26;
+  color: #f7f7f6;
+  text-align: center;
+  padding: 5rem 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .redes a {
+  color: #f7f7f6;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: scale 0.3s ease;
+}
+
+.footer .redes a:hover {
+  transform: scale(1.05);
+}
+
+
+/* menu hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #1b1e26;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-mobile {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #1b1e26;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  z-index: 1000;
+}
+
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-mobile li {
+  margin: 1rem 0;
+}
+
+.menu-mobile a {
+  color: #f7f7f6;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.menu-mobile a:hover {
+  color: #ec6944;
+}
+
+/* ======== RESPONSIVE MEDIA QUERIES ======== */
+
+/* Mobile hasta 768px */
+@media (max-width: 768px) {
+  header nav {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+    .hamburger {
+        display: block;
+        justify-self: end;
+    }
+
+  .navbar,
+  .contacto-boton {
+    display: none;
+  }
+
+  .logo {
+    justify-self: center;
+  }
+
+  main .sobremi {
+    width: 90%;
+    justify-self: center;
+  }
+
+  main .portfolio .proyectos,
+  main .servicios .servicios-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .portfolio .proyectos img,
+  main .servicios .servicios-lista img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  main .contacto form input,
+  main .contacto form textarea {
+    width: 100%;
+  }
+}
+
+/* Tablets entre 769px y 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar,
+  .contacto-boton {
+    display: none;
+  }
+
+  .logo {
+    justify-self: center;
+  }
+
+  main .portfolio .proyectos,
+  main .servicios .servicios-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .portfolio .proyectos img,
+  main .servicios .servicios-lista img {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  main .contacto form input,
+  main .contacto form textarea {
+    width: 100%;
+  }
+}
+
+/* Mobile XS hasta 480px (incluye 320px) */
+@media (max-width: 480px) {
+  header nav {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 25px;
+    justify-self: center;
+  }
+
+  main .inicio h1 {
+    font-size: 1.8rem;
+  }
+
+  main h2,
+  main .h2resaltado {
+    font-size: 1rem;
+  }
+
+  main .sobremi-texto,
+  main .portfolio .proyectos .proyecto1,
+  .proyecto2,
+  .proyecto3,
+  main .servicios .servicios-lista .servicio {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  main .portfolio .proyectos img,
+  main .servicios .servicios-lista img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  main .portfolio .proyectos h3,
+  main .servicios .servicios-lista h3 {
+    font-size: 1.2rem;
+  }
+
+    main .portfolio .proyectos button,
+    main .servicios .servicios-lista button {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    }
+
+  main .contacto form button {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 3rem 1rem;
+  }
+
+  .footer .redes a {
+    font-size: 1.2rem;
+  }
+}
