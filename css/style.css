@@ -466,9 +466,7 @@ main .contacto form button:hover {
   color: #ec6944;
 }
 
-/* ======== RESPONSIVE MEDIA QUERIES ======== */
-
-/* Mobile hasta 768px */
+/* responsive */
 @media (max-width: 768px) {
   header nav {
     grid-template-columns: 1fr 1fr;
@@ -512,7 +510,6 @@ main .contacto form button:hover {
   }
 }
 
-/* Tablets entre 769px y 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
   
   .navbar,
@@ -542,7 +539,6 @@ main .contacto form button:hover {
   }
 }
 
-/* Mobile XS hasta 480px (incluye 320px) */
 @media (max-width: 480px) {
   header nav {
     grid-template-columns: 1fr 1fr;
