@@ -511,14 +511,25 @@ main .contacto form button:hover {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+  header nav {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 1rem;
+  }
   
+    .hamburger {
+    display: block;
+    justify-self: end;
+  }
+
   .navbar,
   .contacto-boton {
     display: none;
   }
 
   .logo {
-    justify-self: center;
+    justify-self: start;
   }
 
   main .portfolio .proyectos,
@@ -546,9 +557,18 @@ main .contacto form button:hover {
     padding: 1rem;
   }
 
+    .hamburger {
+    display: block;
+    justify-self: end;
+  }
+
+  .navbar,
+  .contacto-boton {
+    display: none;
+  }
+
   .logo {
-    height: 25px;
-    justify-self: center;
+    justify-self: start;
   }
 
   main .inicio h1 {
