@@ -46,6 +46,7 @@ header nav {
   justify-self: center;
 }
 
+
 .navbar li a {
   text-decoration: none;
   color: white;
@@ -470,14 +471,14 @@ main .contacto form button:hover {
 /* Mobile hasta 768px */
 @media (max-width: 768px) {
   header nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
 
-    .hamburger {
-        display: block;
-        justify-self: end;
-    }
+  .hamburger {
+    display: block;
+    justify-self: end;
+  }
 
   .navbar,
   .contacto-boton {
@@ -485,7 +486,7 @@ main .contacto form button:hover {
   }
 
   .logo {
-    justify-self: center;
+    justify-self: start;
   }
 
   main .sobremi {
@@ -513,6 +514,7 @@ main .contacto form button:hover {
 
 /* Tablets entre 769px y 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
+  
   .navbar,
   .contacto-boton {
     display: none;
@@ -543,7 +545,7 @@ main .contacto form button:hover {
 /* Mobile XS hasta 480px (incluye 320px) */
 @media (max-width: 480px) {
   header nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     padding: 1rem;
   }
@@ -567,8 +569,8 @@ main .contacto form button:hover {
   .proyecto2,
   .proyecto3,
   main .servicios .servicios-lista .servicio {
-    font-size: 0.9rem;
-    padding: 1rem;
+    font-size: 1.0rem;
+    padding: 1.5rem;
   }
 
   main .portfolio .proyectos img,
