@@ -306,7 +306,7 @@ main .servicios .servicios-lista .servicio:hover {
 }
 
 main .servicios .servicios-lista img {
-  width: 50vh;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
